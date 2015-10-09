@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Octokit</id>
+    <version>0.16.0</version>
+    <authors>GitHub</authors>
+    <owners>GitHub</owners>
+    <licenseUrl>https://github.com/octokit/octokit.net/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/octokit/octokit.net</projectUrl>
+    <iconUrl>https://f.cloud.github.com/assets/19977/1441274/160fba8c-41a9-11e3-831d-61d88fa886f4.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>An async-based GitHub API client library for .NET</description>
+    <summary>An async-based GitHub API client library for .NET</summary>
+    <releaseNotes>New: Implemented `GetMetadata` method of `IMiscellaneousClient` to retrieve information from the Meta endpoint -#892 via @haacked
+Improved: Add missing `ClosedAt` property to `Milestone` response - #890 via @geek0r
+Fixed: `NullReferenceException` when retrieving contributors for an empty repository - #897 via @adamralph
+Fixed: Bug that prevented release uploads and will unblock the entire F# ecosystem - #895 via @naveensrinivasan</releaseNotes>
+    <copyright>Copyright GitHub 2013</copyright>
+    <tags>GitHub API Octokit</tags>
+    <dependencies>
+      <group>
+        <dependency id="Microsoft.Net.Http" />
+      </group>
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework="Windows0.0" />
+      <group targetFramework=".NETPortable0.0-win81+wpa81" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Net.Http" targetFramework=".NETFramework4.5, .NETCore4.5" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
